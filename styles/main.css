@@ -7,6 +7,12 @@
   padding-top: 1.5rem;
 }
 
+@media (max-width: 26.875rem) {
+  & .logo {
+    display: none;
+  }
+}
+
 .arrow {
   display: flex;
   text-align: center;
@@ -25,11 +31,26 @@
   }
 }
 
+@media (max-width: 26.875rem) {
+  & .arrow {
+    /* display: none; */
+    margin-left: 2.2rem;
+  }
+}
+
 .title {
   margin-top: 1.5rem;
   color: var(--content-primary);
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 32px;
   font-weight: bold;
   margin-bottom: 4.5rem;
+}
+
+@media (max-width: 26.875rem) {
+  & .title {
+    margin-top: 2.5rem;
+    font-size: .8rem;
+    margin-left: 2.2rem;
+  }
 }

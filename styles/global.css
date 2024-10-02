@@ -25,5 +25,14 @@ body {
   width: 100%;
   height: 100vh;
   background-size: contain;
-  padding-left: 23rem;
+  padding-left: 20rem;
+  overflow-x: hidden;
+  align-items: center;
+}
+
+@media (max-width: 26.875rem) {
+  & body {
+    padding: 0;
+    overflow-x: hidden;
+  }
 }

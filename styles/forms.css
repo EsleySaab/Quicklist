@@ -2,6 +2,13 @@ text-container {
   display: flex;
   align-items: center;
 }
+
+@media (max-width: 26.875rem) {
+  text-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .my-input {
   margin-right: 1rem;
   padding: 0.7rem 17rem;
@@ -11,6 +18,15 @@ text-container {
   padding-left: 1rem;
 }
 
+@media (max-width: 26.875rem) {
+  & .my-input {
+    padding: 1rem 5.75rem;
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 .add {
   padding: 0.8rem 2.2rem;
   background-color: var(--color-brand);
@@ -18,4 +34,37 @@ text-container {
   border-radius: 0.7rem;
   color: var(--white);
   cursor: pointer;
+}
+
+@media (max-width: 26.875rem) {
+  & .add {
+    padding: 1rem 8.5rem;
+    display: flex;
+    margin: auto;
+  }
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.my-checkbox {
+  margin-right: 0.5rem;
+}
+
+label {
+  font-size: 16px;
+  color: var(--content-secondary);
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  background-color: #ffffff;
+  margin-right: 20rem;
+  padding-left: 0.5rem;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  border: solid 1px var(--border-primary);
+  border-radius: 0.7rem;
 }
