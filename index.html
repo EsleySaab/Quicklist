@@ -14,73 +14,50 @@
   </head>
   <body>
     <main>
-      <div class="logo">
-        <img src="./assets/logo.png" alt="" />
+    <div class="logo">
+      <img src="./assets/logo.png" alt="" />
+    </div>
+
+    <div class="arrow">
+      <a href="#" class="link">
+        <img src="./assets/arrow-left.svg" alt="" />
+        <span>Voltar</span>
+      </a>
+    </div>
+    <div class="title">
+      <h1>Compras da semana</h1>
+    </div>
+
+    <form id="shoppingForm">
+      <div class="text-container">
+        <input
+          class="my-input"
+          type="text"
+          name="add"
+          id="itemInput"
+          placeholder="Adicione um novo item"
+        />
+        <button type="submit" class="add">Adicionar item</button>
       </div>
 
-      <div class="arrow">
-        <a href="#" class="link">
-          <img src="./assets/arrow-left.svg" alt="" />
-          <span>Voltar</span>
-        </a>
+      <div class="text-container">
+        <div class="checkbox-group" id="checkboxGroup">
+          <!-- Itens serão adicionados aqui dinamicamente -->
+           
+        </div>
       </div>
-      <div class="title">
-        <h1>Compras da semana</h1>
+    </form>
+
+    <footer>
+      <div class="alert" id="alert" style="display: none;">
+        <img src="./assets/alert-2.svg" alt="">
+        <p>O item foi removido da lista</p>
+        <img class="x" src="./assets/x-2.svg" alt="">
       </div>
+    </footer>
+  </main>
 
-      <form>
-        <div class="text-container">
-          <input
-            class="my-input"
-            type="text"
-            name="add"
-            id="add"
-            placeholder="Adicione um novo item"
-          />
-          <button class="add">Adicionar item</button>
-        </div>
 
-        <div class="text-container">
-          <div class="checkbox-group">
-            <label>
-              <input type="checkbox" name="checkbox" id="checkbox" class="my-checkbox" />
-              Pão de forma
-              <button class="delete">
-                <img src="./assets/trash.svg" alt="">
-              </button>
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox" id="checkbox" class="my-checkbox" />
-              Café preto
-              <button class="delete">
-                <img src="./assets/trash.svg" alt="">
-              </button>
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox" id="checkbox" class="my-checkbox" />
-              Suco de laranja
-              <button class="delete">
-                <img src="./assets/trash.svg" alt="">
-              </button>
-            </label>
-            <label>
-              <input type="checkbox" name="checkbox" id="checkbox" class="my-checkbox" />
-              Bolacha
-              <button class="delete">
-                <img src="./assets/trash.svg" alt="">
-              </button>
-            </label>
-          </div>
-        </div>
-      </form>
-
-      <footer>
-        <div class="alert">
-          <img src="./assets/alert-2.svg" alt="">
-          <p>O item foi removido da lista</p>
-          <img class="x" src="./assets/x-2.svg" alt="">
-        </div>
-      </footer>
-    </main>
+    <script src="scritpts.js"></script>
   </body>
 </html>
