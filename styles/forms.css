@@ -52,7 +52,7 @@ text-container {
 
 @media (max-width: 26.875rem) {
   & .add {
-    padding: 1rem 8.5rem;
+    padding: 1rem 8rem;
     display: flex;
     margin: auto;
   }
