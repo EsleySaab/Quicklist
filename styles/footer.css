@@ -13,6 +13,13 @@
   padding: 0.5rem;
 }
 
+@media (max-width: 26.875rem) {
+  & .alert {
+    margin-left: 2rem;
+    max-width: 84%;
+  }
+}
+
 .x {
   margin-left: auto;
 }
