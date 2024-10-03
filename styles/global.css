@@ -28,6 +28,12 @@ body {
   padding-left: 20rem;
   overflow-x: hidden;
   align-items: center;
+
+
+}
+
+html {
+  overflow-x: hidden;
 }
 
 @media (max-width: 26.875rem) {
